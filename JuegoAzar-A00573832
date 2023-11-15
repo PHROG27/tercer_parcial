@@ -1,0 +1,18 @@
+from random import randint
+numero_random = randint(1,10)
+intentos=0
+max_intentos=3
+print("Adivina el número del 1-10. Recuerda que tienes 3 intentos!")
+while intentos<max_intentos:
+  intento=int(input("Trata de adivinar el numero"))
+  intentos+=1
+
+if intento == numero_random:
+  print(f"Haz adivinado! en {intentos}")
+elif intento != numero_random:
+  print("Numero equivocado, intenta de nuevo")
+else:
+  print("Incorrecto.")
+
+if intentos == max_intentos:
+  print("No has conseguido adivinar el numero y tus intentos se han terminado")
