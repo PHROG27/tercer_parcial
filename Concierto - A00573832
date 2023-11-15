@@ -1,0 +1,39 @@
+boletos=0
+while True:
+  asistente=int(input("Hay algun asistente? (si/no)"))
+  if asistente.lower == "no":
+    break
+  nombre=input("Cual es tu nombre?")
+  zona=input("En que zona estas? (z1,z2,z3")
+  if z== "1":
+    print("Son $2000")
+    boletos+= 2000
+  elif z== "2":
+    print("Son $1000")
+    boletos+= 1000
+  elif z=="3":
+    print("Son $700")
+    boletos+= 700
+    d=input("Que dia es hoy?").lower()
+    if d in ["lunes", "martes", "miercoles", "jueves"]:
+      cu = input("Tienes algun cupon? (si/no)").lower()
+
+if cu == "si":
+  cupon=input("Es Platino(1), Oro(2), Plata(3)")
+  if cupon == "1":
+    print("Se le ha hecho un descuento de $500")
+  elif cupon == "2":
+    print("Se le ha hecho un descuento de $300")
+  elif cupon == "3":
+    print("Se le ha hecho un descuento de $200")
+  elif cu == "no":
+    print("De acuerdo")
+  elif d in ["viernes", "sábado", "domingo"]:
+    print("No hay descuento")
+     
+    t = boletos
+    print(f"El total a pagar {nombre} es de {t}")
+
+
+  print("Resumen:")
+  print(f"Dinero acumulado {boletos}")
